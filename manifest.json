@@ -1,0 +1,22 @@
+{
+    "manifest_version": 2,
+    "name": "VideoMotionSmoothing",
+    "version": "1.0",
+    "description": "Chrome extension, smooths motion in videos for screens with choppy video",
+    "permissions": [
+      "https://www.youtube.com/*",
+      "https://www.googleapis.com/*",
+      "https://www.youtube.com/iframe_api"
+    ],
+    "content_scripts": [
+      {
+        "matches": [
+          "https://www.youtube.com/*"
+        ],
+        "js": [
+          "content.js"
+        ]
+      }
+    ]
+  }
+  
